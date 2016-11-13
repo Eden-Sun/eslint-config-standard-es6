@@ -1,0 +1,56 @@
+{
+  "name": "eslint-config-standard-es6",
+  "description": "JavaScript Standard Style - ESLint Shareable Config",
+  "version": "0.0.1",
+  "author": {
+    "name": "Eden Sun",
+    "email": "huntack478@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/Eden-Sun/eslint-config-standard-es6"
+  },
+  "devDependencies": {
+    "eslint": ">=3.8.1"
+  },
+  "homepage": "https://github.com/Eden-Sun/eslint-config-standard-es6",
+  "keywords": [
+    "JavaScript Standard Style",
+    "check",
+    "checker",
+    "code",
+    "code checker",
+    "code linter",
+    "code standards",
+    "code style",
+    "enforce",
+    "eslint",
+    "eslintconfig",
+    "hint",
+    "jscs",
+    "jshint",
+    "lint",
+    "policy",
+    "quality",
+    "simple",
+    "standard",
+    "standard style",
+    "style",
+    "style checker",
+    "style linter",
+    "verify"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.3.2",
+    "eslint-plugin-standard": "^2.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Eden-Sun/eslint-config-standard-es6.git"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  }
+}
