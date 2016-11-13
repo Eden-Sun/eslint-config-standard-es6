@@ -4,8 +4,8 @@ module.exports = [
 	tester: 'var a = 0'
 },
 {
-	rule:'no-var',
-	tester: `let a = '0'`
+	rule:'quotes',
+	tester: `let a = "0"`
 },
 {
 	rule:'semi',

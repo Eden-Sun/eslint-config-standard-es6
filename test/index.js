@@ -1,16 +1,19 @@
 require('should')
-var linter = require("eslint").linter
 var spec = require('./spec.js')
+var CLIEngine = require("eslint").CLIEngine;
+var linter = require("eslint").linter;
 
-var eslintConfig = require("../index.js")
+var cli = new CLIEngine({
+	envs: ["node", "mocha"],
+	configFile: './index.js',
+})
+
 describe('ESlint standard extendsion tests', () => {
 	spec.forEach(s => {
-		it(s.tester, () => {
-			var result = linter.verify(s.tester, eslintConfig)
-			var errors = result.map(err => err.ruleId)
+		it(`${s.rule} test : ${s.tester} .. `, () => {
+			var result = cli.executeOnText(s.tester).results[0]
+			var errors = result.messages.map(err => err.ruleId)
 			errors.should.containEql(s.rule)
 		})
 	})
 })
-
-
