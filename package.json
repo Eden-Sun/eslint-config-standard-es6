@@ -40,6 +40,6 @@
     "url": "git://github.com/Eden-Sun/eslint-config-standard-es6.git"
   },
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test/"
   }
 }
